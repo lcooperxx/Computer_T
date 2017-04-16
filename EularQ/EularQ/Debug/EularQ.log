@@ -1,0 +1,80 @@
+﻿生成启动时间为 2017/4/15 星期六 21:46:09。
+     1>项目“d:\Cooper\documents\visual studio 2013\Projects\EularQ\EularQ\EularQ.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\EularQ.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(1): warning C4603: “_CRT_SECURE_NO_WARNINGS”: 未定义宏或在预编译头使用后定义发生改变
+                 将宏添加到预编译头中，而不是在此处定义
+                 d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(2) : 使用预编译头
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\one.h(43): warning C4804: “<”: 在操作中使用类型“bool”不安全
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\one.h(86): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\one.h(134): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\one.h(140): warning C4804: “<”: 在操作中使用类型“bool”不安全
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(146): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(155): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(167): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(177): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(187): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(202): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(205): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(221): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(224): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(234): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(245): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(254): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(263): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(266): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(275): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(278): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(287): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(290): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(299): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(308): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(311): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(312): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(320): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(323): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(327): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(298): warning C4101: “t5”: 未引用的局部变量
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(813): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\cooper\documents\visual studio 2013\projects\eularq\eularq\main.cpp(875): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(226) : 参见“freopen”的声明
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"d:\Cooper\documents\visual studio 2013\Projects\EularQ\Debug\EularQ.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"d:\Cooper\documents\visual studio 2013\Projects\EularQ\Debug\EularQ.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"d:\Cooper\documents\visual studio 2013\Projects\EularQ\Debug\EularQ.lib" /MACHINE:X86 Debug\main.obj
+         Debug\stdafx.obj
+         EularQ.vcxproj -> d:\Cooper\documents\visual studio 2013\Projects\EularQ\Debug\EularQ.exe
+       PostBuildEvent:
+         copy ..\debug\*exe ..\lib\
+         :VCEnd
+         ..\debug\EularQ.exe
+         已复制         1 个文件。
+     1>已完成生成项目“d:\Cooper\documents\visual studio 2013\Projects\EularQ\EularQ\EularQ.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.95
