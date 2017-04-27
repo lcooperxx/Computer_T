@@ -1,0 +1,88 @@
+﻿生成启动时间为 2017/4/26 星期三 21:40:55。
+     1>项目“D:\Cooper\Documents\Visual Studio 2013\Projects\Test_Technology\3DEngine4\3DEngine4\3DEngine4.vcxproj”在节点 3 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _AFXEXT /D _CRT_SECURE_NO_WARNINGS /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\3DEngine4.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _AFXEXT /D _CRT_SECURE_NO_WARNINGS /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\3DEngine4.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt 3DEngine4.cpp CEuler.cpp CglCamera.cpp CglControl.cpp CglMath.cpp CMatrix.cpp COpenGL.cpp CQuaternion.cpp CVector3.cpp glFont.cpp glPicLoad.cpp glRecorder.cpp glShape.cpp glTime.cpp
+         glTime.cpp
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\total.h(89): warning C4522: “CMatrix”: 指定了多个赋值运算符
+         glShape.cpp
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\total.h(89): warning C4522: “CMatrix”: 指定了多个赋值运算符
+         glRecorder.cpp
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\total.h(89): warning C4522: “CMatrix”: 指定了多个赋值运算符
+         glPicLoad.cpp
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\total.h(89): warning C4522: “CMatrix”: 指定了多个赋值运算符
+         glFont.cpp
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\total.h(89): warning C4522: “CMatrix”: 指定了多个赋值运算符
+         CVector3.cpp
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\total.h(89): warning C4522: “CMatrix”: 指定了多个赋值运算符
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\cvector3.cpp(145): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\cvector3.cpp(146): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+         CQuaternion.cpp
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\total.h(89): warning C4522: “CMatrix”: 指定了多个赋值运算符
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\cquaternion.cpp(8): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\cquaternion.cpp(9): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\cquaternion.cpp(60): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\cquaternion.cpp(147): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\cquaternion.cpp(164): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\cquaternion.cpp(165): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+         COpenGL.cpp
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\total.h(89): warning C4522: “CMatrix”: 指定了多个赋值运算符
+         CMatrix.cpp
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\total.h(89): warning C4522: “CMatrix”: 指定了多个赋值运算符
+         CglMath.cpp
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\total.h(89): warning C4522: “CMatrix”: 指定了多个赋值运算符
+         CglControl.cpp
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\total.h(89): warning C4522: “CMatrix”: 指定了多个赋值运算符
+         CglCamera.cpp
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\total.h(89): warning C4522: “CMatrix”: 指定了多个赋值运算符
+         CEuler.cpp
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\total.h(89): warning C4522: “CMatrix”: 指定了多个赋值运算符
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\ceuler.cpp(34): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\ceuler.cpp(35): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\ceuler.cpp(36): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\ceuler.cpp(39): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\ceuler.cpp(40): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\ceuler.cpp(41): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\ceuler.cpp(44): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\ceuler.cpp(45): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\ceuler.cpp(46): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\ceuler.cpp(97): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\ceuler.cpp(98): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\ceuler.cpp(99): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\ceuler.cpp(100): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\ceuler.cpp(101): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\ceuler.cpp(102): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\ceuler.cpp(103): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\3dengine4\3dengine4\ceuler.cpp(104): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+         3DEngine4.cpp
+         正在生成代码...
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _AFXEXT /D _CRT_SECURE_NO_WARNINGS /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+         dllmain.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0804" /IDebug\ /nologo /fo"Debug\3DEngine4.res" 3DEngine4.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Cooper\Documents\Visual Studio 2013\Projects\Test_Technology\project5.4\Debug\3DEngine4.dll" /INCREMENTAL /NOLOGO /DEF:".\3DEngine4.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\Cooper\Documents\Visual Studio 2013\Projects\Test_Technology\project5.4\Debug\3DEngine4.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Cooper\Documents\Visual Studio 2013\Projects\Test_Technology\project5.4\Debug\3DEngine4.lib" /MACHINE:X86 /DLL Debug\3DEngine4.res
+         Debug\3DEngine4.obj
+         Debug\CEuler.obj
+         Debug\CglCamera.obj
+         Debug\CglControl.obj
+         Debug\CglMath.obj
+         Debug\CMatrix.obj
+         Debug\COpenGL.obj
+         Debug\CQuaternion.obj
+         Debug\CVector3.obj
+         Debug\dllmain.obj
+         Debug\glFont.obj
+         Debug\glPicLoad.obj
+         Debug\glRecorder.obj
+         Debug\glShape.obj
+         Debug\glTime.obj
+         Debug\stdafx.obj
+            正在创建库 D:\Cooper\Documents\Visual Studio 2013\Projects\Test_Technology\project5.4\Debug\3DEngine4.lib 和对象 D:\Cooper\Documents\Visual Studio 2013\Projects\Test_Technology\project5.4\Debug\3DEngine4.exp
+         3DEngine4.vcxproj -> D:\Cooper\Documents\Visual Studio 2013\Projects\Test_Technology\project5.4\Debug\3DEngine4.dll
+     1>已完成生成项目“D:\Cooper\Documents\Visual Studio 2013\Projects\Test_Technology\3DEngine4\3DEngine4\3DEngine4.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:13.00
