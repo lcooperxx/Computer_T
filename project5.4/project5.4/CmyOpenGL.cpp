@@ -14,6 +14,10 @@
 #undef THIS_FILE
 static char THIS_FILE[] = __FILE__;
 #define new DEBUG_NEW
+#define Key_Up1 0x4800    // 向上方向键 　　
+#define Key_Down1 0x5000  // 向下方向键
+#define Key_Right1 0x4d00  // 向右方向键
+#define Key_Left1 0x4b00   // 向左方向键
 #endif
 
 //////////////////////////////////////////////////////////////////////
@@ -34,7 +38,7 @@ void CmyOpenGL::SetRC()
 	glLineWidth(1.0f);
 	glShadeModel(GL_FLAT);
 	glFrontFace(GL_CW);
-	glEnable(GL_CULL_FACE);
+//	glEnable(GL_CULL_FACE);
 	glEnable(GL_DEPTH_TEST);
 	glPolygonMode(GL_BACK, GL_LINE);
 	glEnable(GL_POINT_SMOOTH);
@@ -50,7 +54,8 @@ void CmyOpenGL::SetRC()
 }
 void CmyOpenGL::Scat_Initial()
 {
-	path.push_back(CVector3(0, 1, 0, 0));
+	SetRC();
+	//path.push_back(CVector3(0, 0.01, 0, 0));
 	for (int i = 0; i < 16; i++)
 	{
 		if (i == 0 || i == 4 || i == 10 || i == 15)
@@ -68,13 +73,13 @@ void CmyOpenGL::Scat_Initial()
 	srand((unsigned)(time(NULL)));//按时间生成随机种子，且数量不是定值
 	for (i = 0; i < 10001; i++)
 	{
-		z[0][i] = 2.0*(0.5 - rand() / double(RAND_MAX));//生成10 000个点的x轴坐标
-		z[1][i] = 2.0*(0.5 - rand() / double(RAND_MAX));//生成10 000个点的y轴坐标
-		z[2][i] = 2.0*(0.5 - rand() / double(RAND_MAX));//生成10 000个点的z轴坐标
+		z[0][i] = 20.0*(0.5 - rand() / double(RAND_MAX));//生成10 000个点的x轴坐标
+		z[1][i] = 20.0*(0.5 - rand() / double(RAND_MAX));//生成10 000个点的y轴坐标
+		z[2][i] = 20.0*(0.5 - rand() / double(RAND_MAX));//生成10 000个点的z轴坐标
 	}
 	memset(visit, 0, sizeof(visit));
 	visit[0] = 1;
-	gluOrtho2D(1.0, 1.0, 1.0, 1.0);   //投影到裁剪窗大小：世界
+//	gluOrtho2D(1.0, 1.0, 1.0, 1.0);   //投影到裁剪窗大小：世界
 }
 void CmyOpenGL::scatter()
 {
@@ -143,6 +148,10 @@ void CmyOpenGL::Scatter_Line()
 		p.Set(z[0][point[i]], z[1][point[i]], z[2][point[i]], 0);
 		glVertex3dv(p);//直线起点
 		p.Set(z[0][point[i + 1]], z[1][point[i + 1]], z[2][point[i + 1]], 0);
+		if (p_flag == 1)
+		{
+			p_mx = z[0][point[i + 1]]; p_my = z[1][point[i + 1]]; p_mz = z[2][point[i + 1]];
+		}
 		//t1 = t1.SetRotate(60, p).run();
 		glVertex3dv(p);//直线终点
 	}
@@ -197,7 +206,7 @@ void CmyOpenGL::Scatter_triangle()
 }
 void CmyOpenGL::Display()
 {
-	SetRC();
+	//int err = glGetError();
 	CMatrix t1;
 	CVector3 p(0, 1, 0, 0);
 	//t1.SetRotate(Seta + 0.2, p).run();
@@ -222,48 +231,47 @@ void CmyOpenGL::Display()
 	{
 		Scatter_triangle();
 	}
-	Scat_Path();
+	if (p_flag == 0)
+		Scat_Path();
+	//err = glGetError();
 	glPopMatrix();
 }
 void CmyOpenGL::Scat_Path()
 {
-	float len = 0;
+
+	double len = 0.0;
+	glEnable(GL_LINE_SMOOTH);
 	glBegin(GL_LINE_STRIP);
-	for (int i = 1; i < path.size() - 1; i++)
+	int testi = (p_path.size() - 1);
+	glColor4f(1.0f, 1.0f, 0.0f, 1.0f);
+	for (int i = 1; i < testi; i++)
 	{
 		CVector3 t;
-		t.m_dX = path[path.size() - 1].m_dX - path[path.size() - 2].m_dX;
-		t.m_dY = path[path.size() - 1].m_dY - path[path.size() - 2].m_dY;
-		t.m_dZ = path[path.size() - 1].m_dZ - path[path.size() - 2].m_dZ;
+		t.m_dX = p_path[p_path.size() - i].m_dX - p_path[p_path.size() - i -1].m_dX;
+		t.m_dY = p_path[p_path.size() - i].m_dY - p_path[p_path.size() - i -1].m_dY;
+		t.m_dZ = p_path[p_path.size() - i].m_dZ - p_path[p_path.size() - i -1].m_dZ;
 		len += t.len();
-		if (len < 10)
+		float testii = (plane_len * 100);
+		if (len < testii)
 		{
-			glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+			glColor4f(1.0f, 1.0f, 0.0f, 1.0f);
+			glVertex3dv(p_path[p_path.size() - i]);
 		}
-		else if (10 <len && len < 20)
-		{
-			float a = 0.8f;
-			glColor4f(1.0f, 1.0f, 1.0f, a);
-			a -= 0.1f;
-		}
-		else
-		{
-			glColor4f(0.0f, 0.0f, 0.0f, 0.0f);
-		}
-		glVertex3dv(path[i]);
-		//glVertex3fv(path[i]);
 	}
 	glEnd();
 }
 void CmyOpenGL::PostInit()
 {
+	//int err = glGetError();
 	glClearColor(0, 0, 0, 0);
 	m_pCamere->SetCamera(CVector3(5, 10, 10,0), CVector3(0, 0, 0,0), true);
 	m_pCamere->SaveCamera();
 	m_pControl->SetSpeed(0.01, 0.5);
-	
+	//err = glGetError();
 	Scat_Initial();
+	//err = glGetError();
 	m_pRecorder->BeginLoad("record.dat", false);
+	//err = glGetError();
 }
 
 void CmyOpenGL::InDraw()
@@ -277,8 +285,8 @@ void CmyOpenGL::InDraw()
 	float t = m_pTime->GetSimuTime() / 1000;
 
 	glColor3f(1, 0, 0);
-
-	Display();
+	
+	Display(); 
 }
 void CmyOpenGL::Save_Pos()
 {
@@ -395,17 +403,63 @@ bool CmyOpenGL::OnKey(unsigned int nChar, bool bDown)
 			s_t = 1;
 			s_hpr2.Set(m_pCamere->m_hpr[0], m_pCamere->m_hpr[1], m_pCamere->m_hpr[2]);
 			s_pn = m_pCamere->m_pos;
-			//Scat_Jump();
 			break;
-		default:
+			//飞机
+		case 'M':
+			p_flag = p_flag == 0 ? 1: 0;
+			break;
+		case VK_UP:
+			if (p_flag == 0)
+				p_mx += 0.01;
+				p_my += 0.25;
+				p_mz += 0.01;
+			break;
+		case VK_DOWN:
+			if (p_flag == 0)
+				p_mx -= 0.01;
+				p_my -= 0.25;
+				p_mz -= 0.01;
+			break;
+		case VK_LEFT:
+			if (p_flag == 0)
+				p_rx += 0.25;
+				p_mx += 0.25;
+				p_my += 0.25;
+				p_mz += 0.25;
+			break;
+		case VK_RIGHT:
+			if (p_flag == 0)
+				p_ry -= 1;
+				p_mx -= 0.25;
+				p_my -= 0.25;
+				p_mz -= 0.25;
 			break;
 	}
+	p_path.push_back(CVector3(p_mx, p_my, p_mz,0));
 	return false;
 }
 double seta = 0;
 
+void CmyOpenGL::Scat_plane()
+{
+	glPushMatrix();
+	//glRotated(p_rx, p_rx, p_my, p_ry);
+	//glRotated(p_ry, p_rx, p_my, p_ry);
+	//glTranslated(p_mx, p_my, p_mz);
+
+	glBegin(GL_TRIANGLES);
+	glColor3f(1.0f, 1.0f, 0.0f);
+	glVertex3f(p_mx, p_my, p_mz);
+	glVertex3f(p_mx+1.0, p_my, p_mz);
+	glVertex3f(p_mx+0.5, p_my, p_mz+1.0);
+	glEnd();
+
+	glPopMatrix();
+}
 void CmyOpenGL::DrawModel()
 {
+	Scat_plane();
+
 	seta += m_pTime->GetTimeSpan()*0.01;
 	glPushAttrib(GL_CURRENT_BIT);
 	glColor3f(1, 0, 0);

@@ -281,7 +281,6 @@ bool CglControl::KeyboardCtrlView()
 		m_pCamera->LoadCamera();
 		bHaveKeyDown = true;
 	}
-	//m_pCamera->path.push_back(CVector3(m_pCamera->m_pos.m_dX,m_pCamera->m_pos.m_dY,m_pCamera->m_pos.m_dZ,0));
 	if (bHaveKeyDown)
 		InvalidateRect(m_pOpenGL->m_hWnd, NULL, FALSE);
 	return bHaveKeyDown;

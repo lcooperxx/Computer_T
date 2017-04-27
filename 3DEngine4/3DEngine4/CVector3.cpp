@@ -113,7 +113,8 @@ CVector3 CVector3::crossMul(CVector3 &n)//叉乘操作
 }
 
 double CVector3::len(){//求模操作
-	double temp = sqrt(m_dX * m_dX + m_dY * m_dY + m_dZ * m_dZ + m_dT * m_dT);
+	double temp = 0;
+	temp = sqrt(m_dX * m_dX + m_dY * m_dY + m_dZ * m_dZ);
 	return temp;
 }
 void CVector3::Normalize(){//标准化操作

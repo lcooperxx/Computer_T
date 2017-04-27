@@ -23,10 +23,10 @@ public:
 	bool m_bWired;
 	vector<CVector3> pos;
 	vector<int> point;
-	vector<CVector3> path;
+	//vector<CVector3> path;
 
 	int site = 0;
-	int f2_type = 0;
+	float plane_len = 0.141;
 	double z[3][10010], visit[10000];
 	CMatrix s_pos1, s_pos2;
 	CEuler s_hpr1, s_hpr2, s_hpr3;
@@ -55,9 +55,14 @@ public:
 	void Scatter_Line();
 	void Scatter_triangle();
 	void Scat_Initial();
-
-
+	void Scat_plane();
+	CVector3 p;
+	void changeR(float fi, CVector3 p);
+	int p_rx = 0, p_ry = 100000;
+	double p_mx = 0, p_my = 0, p_mz = 0;
+	vector<CVector3>p_path;
 	void Scat_Path();
+	int p_flag = 0;
 
 	void SetRC();
 private:

@@ -1,14 +1,14 @@
-﻿生成启动时间为 2017/4/27 星期四 8:47:20。
+﻿生成启动时间为 2017/4/27 星期四 23:56:39。
      1>项目“D:\Cooper\Documents\Visual Studio 2013\Projects\Test_Technology\project5.4\project5.4\project5.4.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\project5.4.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt CmyOpenGL.cpp
          CmyOpenGL.cpp
      1>d:\cooper\documents\visual studio 2013\projects\test_technology\project5.4\project5.4\opengl\total.h(89): warning C4522: “CMatrix”: 指定了多个赋值运算符
-     1>d:\cooper\documents\visual studio 2013\projects\test_technology\project5.4\project5.4\cmyopengl.cpp(93): warning C4804: “<”: 在操作中使用类型“bool”不安全
-     1>d:\cooper\documents\visual studio 2013\projects\test_technology\project5.4\project5.4\cmyopengl.cpp(134): warning C4018: “<”: 有符号/无符号不匹配
-     1>d:\cooper\documents\visual studio 2013\projects\test_technology\project5.4\project5.4\cmyopengl.cpp(177): warning C4018: “<”: 有符号/无符号不匹配
-     1>d:\cooper\documents\visual studio 2013\projects\test_technology\project5.4\project5.4\cmyopengl.cpp(178): warning C4804: “<”: 在操作中使用类型“bool”不安全
-     1>d:\cooper\documents\visual studio 2013\projects\test_technology\project5.4\project5.4\cmyopengl.cpp(232): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\project5.4\project5.4\cmyopengl.h(29): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\project5.4\project5.4\cmyopengl.cpp(98): warning C4804: “<”: 在操作中使用类型“bool”不安全
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\project5.4\project5.4\cmyopengl.cpp(139): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\project5.4\project5.4\cmyopengl.cpp(186): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\cooper\documents\visual studio 2013\projects\test_technology\project5.4\project5.4\cmyopengl.cpp(187): warning C4804: “<”: 在操作中使用类型“bool”不安全
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Cooper\Documents\Visual Studio 2013\Projects\Test_Technology\project5.4\Debug\project5.4.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\Cooper\Documents\Visual Studio 2013\Projects\Test_Technology\project5.4\Debug\project5.4.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Cooper\Documents\Visual Studio 2013\Projects\Test_Technology\project5.4\Debug\project5.4.lib" /MACHINE:X86 Debug\project5.4.res
          Debug\CmyOpenGL.obj
@@ -27,4 +27,4 @@
 
 生成成功。
 
-已用时间 00:00:03.57
+已用时间 00:00:01.41
